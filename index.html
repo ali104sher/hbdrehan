@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10102a">
+  <title>Happy Birthday, Rehan! 🎂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div id="lockScreen" class="lock-screen">
+    <div class="lock-glow"></div>
+    <div class="lock-card">
+      <div class="lock-icon">🔐</div>
+      <p class="eyebrow">A LITTLE MEMORY VAULT</p>
+      <h1>Access granted<br><em>only to Rehan.</em></h1>
+      <p class="lock-copy">Some memories are too legendary to leave unprotected.<br>Say our code word to unlock this little corner of the world.</p>
+      <div class="hint"><span>HINT</span> Somewhere in western India… <b>Gujarat</b> ✨</div>
+      <form id="unlockForm">
+        <label class="sr-only" for="codeInput">Code word</label>
+        <input id="codeInput" type="password" placeholder="Enter the code word..." autocomplete="off" required>
+        <button type="submit">Unlock the memories <span>↗</span></button>
+      </form>
+      <p id="lockMessage" class="lock-message" aria-live="polite"></p>
+      <div class="lock-foot">MADE WITH FRIENDSHIP · FROM ALISHER ALAM</div>
+    </div>
+    <div class="floating-star star-a">✦</div><div class="floating-star star-b">✧</div>
+  </div>
+
+  <main id="mainSite" class="site hidden">
+    <nav class="topbar">
+      <a class="brand" href="#home">A <span>✦</span> R</a>
+      <div class="nav-links"><a href="#story">Our story</a><a href="#gallery">The album</a><a href="#letter">A note for you</a></div>
+      <button id="musicToggle" class="music-toggle" type="button"><span class="music-dot"></span><span id="musicLabel">Play our soundtrack</span> ♫</button>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">A DAY FOR THE LEGEND</p>
+        <div class="tiny-stars">✦ &nbsp; ✧ &nbsp; ✦</div>
+        <h1>Happy Birthday,<br><span>Chesam Rehan</span><i>!</i></h1>
+        <p class="hero-sub">To my partner in mischief, midnight conversations<br>and memories that school could never contain.</p>
+        <a class="scroll-cta" href="#bff">SCROLL INTO THE MEMORIES <span>↓</span></a>
+      </div>
+      <div class="hero-side-note">SAINIK SCHOOL IMPHAL · NETaji HOUSE × RAMAN HOUSE</div>
+      <div class="confetti confetti-one">✳</div><div class="confetti confetti-two">✦</div><div class="confetti confetti-three">✧</div>
+    </section>
+
+    <section id="bff" class="bff-section section-pad">
+      <div class="section-heading reveal"><p class="eyebrow">THE MOST IMPORTANT PICTURE</p><h2>Not just a photo.<br><em>A whole era.</em></h2></div>
+      <div class="bff-frame reveal">
+        <img src="photos/BFF.jpg" alt="Alisher and Rehan — BFF" onerror="this.parentElement.classList.add('image-missing')">
+        <div class="bff-fallback">Add your <b>BFF.jpg</b><br>inside the photos folder</div>
+        <div class="bff-stamp">BFF<br><small>ALWAYS</small></div>
+        <span class="frame-caption">THE BOYS. THE STORIES. THE LEGACY.</span>
+      </div>
+    </section>
+
+    <section id="story" class="story-section section-pad">
+      <div class="section-heading reveal"><p class="eyebrow">A FEW PAGES FROM OUR HISTORY</p><h2>Different houses.<br><em>One brotherhood.</em></h2></div>
+      <div class="story-grid">
+        <article class="memory-card reveal"><div class="memory-number">01 / THE GREAT ESCAPES</div><div class="memory-emoji">♟️</div><h3>Netaji House missions</h3><p>You in Netaji House, me in Raman House. And somehow, I kept finding my way into Netaji House. UNO, chess, and the kind of fun that made every sneak-in worth it.</p><span class="scribble">mission accomplished ✓</span></article>
+        <article class="memory-card reveal"><div class="memory-number">02 / AFTER DINNER FILES</div><div class="memory-emoji">🌙</div><h3>That “haunted” hostel</h3><p>Those after-dinner walks around the girls' hostel while it was still being built. A little spooky, a lot adventurous, and absolutely unforgettable.</p><span class="scribble">brave? questionable.</span></article>
+        <article class="memory-card reveal"><div class="memory-number">03 / ABOVE THE WORLD</div><div class="memory-emoji">🌌</div><h3>Rooftop conversations</h3><p>Going up to the roof, enjoying the quiet, and talking about things we didn't tell just anyone. Some conversations stay with you forever.</p><span class="scribble">no judgement. just trust.</span></article>
+        <article class="memory-card reveal"><div class="memory-number">04 / STUDY PARTNERS</div><div class="memory-emoji">📚</div><h3>One helping the other</h3><p>All those study sessions, explanations, doubts and little victories. I hope you remember that I was always rooting for you — and still am.</p><span class="scribble">teamwork, bro.</span></article>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <p class="reveal">“Some people become friends. Some become part of the story.”</p>
+      <span>— THE RAMAN × NETAJI CHRONICLES</span>
+    </section>
+
+    <section id="gallery" class="gallery-section section-pad">
+      <div class="section-heading reveal"><p class="eyebrow">15 LITTLE TIME MACHINES</p><h2>The <em>photo dump.</em></h2><p class="section-intro">A collection of proof that the best memories never need a perfect plan.</p></div>
+      <div id="photoGrid" class="photo-grid"></div>
+      <p class="gallery-tip">Tap any photo to make it bigger <span>↗</span></p>
+    </section>
+
+    <section id="letter" class="letter-section section-pad">
+      <div class="letter-card reveal">
+        <div class="letter-top">A NOTE FROM ALISHER · OPEN WHENEVER</div>
+        <div class="letter-decoration">✦</div>
+        <h2>Dear Rehan,</h2>
+        <p>Happy Birthday, brother! ❤️</p>
+        <p>When I think about Sainik School Imphal, so many memories come rushing back — our house-to-house adventures, UNO and chess in Netaji House, those after-dinner walks, the rooftop talks, and all the moments when we could just be ourselves.</p>
+        <p>Thank you for being the kind of friend with whom silence never felt awkward and conversations never needed a filter. I may have helped you with studies sometimes, but you gave me something much bigger: memories and a friendship I'll always be grateful for.</p>
+        <p>Wherever life takes us after school, I hope we never lose that bond. Keep growing, keep winning, keep being your unapologetically awesome self. May this year bring you happiness, courage, success, and countless reasons to smile.</p>
+        <p class="letter-sign">Happy Birthday once again, Rehan.<br><span>Your brother,</span><br><b>Alisher Alam</b></p>
+        <div class="letter-bottom">FROM RAMAN HOUSE, WITH LOVE & RESPECT ♡</div>
+      </div>
+    </section>
+
+    <footer><div class="footer-stars">✦ ✧ ✦</div><p>Some friendships deserve their own little universe.</p><span>MADE FOR CHESAM REHAN · BY ALISHER ALAM</span></footer>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="closeLightbox" class="lightbox-close" aria-label="Close photo">×</button>
+    <button id="prevPhoto" class="lightbox-arrow" aria-label="Previous photo">‹</button>
+    <img id="lightboxImage" src="" alt="Memory">
+    <button id="nextPhoto" class="lightbox-arrow" aria-label="Next photo">›</button>
+    <p id="lightboxCaption"></p>
+  </div>
+  <audio id="backgroundMusic" src="music.mp3" loop preload="none"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
