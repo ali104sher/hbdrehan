@@ -22,7 +22,7 @@ unlockForm.addEventListener("submit", (event) => {
       sprinkleConfetti();
     }, 750);
   } else {
-    lockMessage.textContent = "Not quite, brother. Think Gujarat 😉";
+    lockMessage.textContent = "Not quite, brother. Think about Kalp 😉";
     codeInput.value = "";
     codeInput.focus();
   }
