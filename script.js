@@ -1,5 +1,4 @@
-// CHANGE THIS if your real shared code word is different.
-const CODE_WORD = "gujarat";
+const CODE_WORD = "YR";
 
 const lockScreen = document.getElementById("lockScreen");
 const mainSite = document.getElementById("mainSite");
